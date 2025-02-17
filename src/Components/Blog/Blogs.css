@@ -178,9 +178,16 @@ h2 {
         font-size: 40px;
     }
 
-    .widget-3 button {
+    /* .widget-3 button {
         width: 100%;
-    }
+    } */
+
+.w-b-b{
+    width: 100%; 
+}
+
+
+
     .widget{
         width: 100%;
     }

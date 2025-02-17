@@ -117,12 +117,17 @@ const BlogPost = () => {
       </div>
       
     </div>
+
+
     <div className="widget-3">
     <h3 className="w3-cont-3">Contact Now For Collaborations</h3>
 
         <a href="/contact"><button className="w-b-b">Contact</button></a>
 
   </div>
+
+
+  
   </>
       
   );
