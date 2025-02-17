@@ -1,0 +1,277 @@
+.blog-container {
+    display: flex;
+    justify-content: center;
+    max-width: 1400px;
+    margin: auto;
+    padding: 50px 20px;
+    margin-top: 8%;
+    gap: 50px;
+}
+
+/* Blog Content */
+.blog-content {
+    width: 65%;
+}
+
+/* Blog Posts */
+.blog-post {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #EFB6C8;
+}
+
+.blog-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.meta {
+    color: #EFB6C8;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.content {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.read-more {
+    color: #ed9db7;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 35%;
+    padding-left: 20px;
+}
+
+/* Widgets */
+.widget, .widget-1, .widget-2, .widget-3 {
+    background: #efb6c893;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.widget h3, .widget-1 h3, .widget-2 h3, .widget-3 h3 {
+    font-size: 18px;
+    color: white;
+    padding: 3%;
+    background-color: #54192c;
+}
+
+.widget-3 h3 {
+    font-size: 50px; /* Reduced from 80px for better responsiveness */
+    margin-bottom: 20px;
+}
+
+.widget ul, .widget-2 ul {
+    list-style: none;
+    padding: 0;
+    color: #54192c;
+    margin-top: 5%;
+}
+
+.widget ul li, .widget-2 ul li {
+    padding: 3%;
+    width: 80%;
+    border: 1px solid #e75281;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+.widget ul li:hover {
+    background-color: #ed9db7;
+}
+
+/* Search Input */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid #EFB6C8;
+}
+
+/* Tags */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 5%;
+    justify-content: center;
+}
+
+.tag {
+    background: #e75281;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #54192c;
+    margin-top: 1%;
+}
+
+/* Button */
+.w-b-b button {
+    width: 90%;
+    max-width: 300px;
+    padding: 10px;
+    border: 2px solid #ed9db7;
+    background-color: #ed9db7;
+    border-radius: 20px;
+    color: white;
+    font-size: 18px;
+}
+
+.widget-3 button:hover {
+    background-color: #e75281;
+}
+
+.widget-3 button a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+/* 🌟 FULL RESPONSIVENESS */
+
+/* ✅ Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+    .blog-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .blog-content, .sidebar {
+        width: 90%;
+    }
+
+    .sidebar {
+        padding-left: 0;
+    }
+
+    .widget-3 h3 {
+        font-size: 40px;
+    }
+
+    .widget-3 button {
+        width: 100%;
+    }
+    .widget{
+        width: 100%;
+    }
+    .widget-1{
+        width: 100%;
+    }
+}
+
+/* ✅ Mobile (Below 768px) */
+@media (max-width: 768px) {
+    .blog-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .blog-content, .sidebar {
+        width: 100%;
+    }
+
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-post {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .meta {
+        font-size: 13px;
+    }
+
+    .content {
+        font-size: 15px;
+    }
+
+    .widget {
+        padding: 10px;
+    }
+
+    .widget-3 h3 {
+        font-size: 35px;
+    }
+
+    .widget-3 button {
+        width: 100%;
+    }
+    .widget{
+        width: 100%;
+    }
+    .widget-1{
+        width: 100%;
+    }
+}
+
+/* ✅ Small Phones (Below 480px) */
+@media (max-width: 480px) {
+    .blog-container {
+        padding: 10px;
+    }
+
+    .blog-post {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .meta {
+        font-size: 12px;
+    }
+
+    .content {
+        font-size: 14px;
+    }
+
+    .widget {
+        padding: 8px;
+    }
+
+    .widget-3 h3 {
+        font-size: 30px;
+    }
+
+    .widget-3 button {
+        font-size: 16px;
+        padding: 8px;
+    }
+    .widget{
+        width: 100%;
+    }
+    .widget-1{
+        width: 100%;
+    }
+}
+

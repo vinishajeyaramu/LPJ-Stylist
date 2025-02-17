@@ -1,0 +1,127 @@
+/* App.css */
+
+  
+  .container {
+    max-width: 90%;
+    height: auto;
+    margin: 50px auto;
+    background-color: #8174A0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10%;
+    color: white;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  h2 {
+    color: #A888B5;
+  }
+  
+  .calendar {
+    padding: 20px;
+  }
+  .month-year-selection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .month-year-selection button, .month-navigation button {
+    background: #A888B5;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .year-navigation button:hover, .month-navigation button:hover {
+    background: #8174A0;
+  }
+  
+  .month-title, .time-title, .form-title, .confirmation-title {
+    color: #A888B5;
+  }
+  .dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .date-button {
+    background-color: #A888B5;
+    border: none;
+    color: white;
+    padding: 12%;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .date-button:hover {
+    background-color: #69247C;
+  }
+  
+  .time-selection {
+    padding: 20px;
+  }
+  
+  .times {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .time-button {
+    width: 30%;
+    background-color: #A888B5;
+    border: none;
+    color: white;
+    padding: 3%;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .time-button:hover {
+    background-color: #69247C;
+  }
+  
+  .booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .booking-form input,
+  .booking-form textarea {
+    width: 30%;
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid #A888B5;
+    border-radius: 5px;
+  }
+  
+  .submit-button {
+    background-color: #69247C;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #A888B5;
+  }
+  
+  .confirmation {
+    padding: 20px;
+  }
+  

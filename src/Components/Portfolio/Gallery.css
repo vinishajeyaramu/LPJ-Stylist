@@ -1,0 +1,77 @@
+.grid-container-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 4px;
+    padding: 50px;
+    margin-top: 8%;
+  }
+  
+  /* 1st & 3rd Row (3 Images, Different Sizes) */
+  .grid-row-3 {
+    display: grid;
+    grid-template-columns: 0.93fr 0.93fr 1.87fr;
+    gap: 4px;
+  }
+  
+  /* 2nd & 4th Row (4 Images, Same Size) */
+  .grid-row-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+  }
+  
+  /* Grid Item */
+  .grid-item {
+    position: relative;
+    overflow: hidden;
+    height: 480px;
+  }
+  
+  /* Image */
+  .grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* Overlay Effect */
+  .grid-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .grid-item:hover .overlay {
+    opacity: 1;
+  }
+  
+  /* Icons */
+  .icon {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .grid-row-3 { grid-template-columns: 1fr 1fr; }
+    .grid-row-4 { grid-template-columns: repeat(2, 1fr); }
+    .grid-item { height: 400px; }
+  }
+  
+  @media (max-width: 768px) {
+    .grid-row-3, .grid-row-4 { grid-template-columns: 1fr; }
+    .grid-item { height: 300px; }
+  }
+  
