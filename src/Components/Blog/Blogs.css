@@ -145,11 +145,11 @@ h2 {
     font-size: 18px;
 }
 
-.widget-3 button:hover {
+.w-b-b:hover {
     background-color: #e75281;
 }
 
-.widget-3 button a {
+.w-b-b  a {
     font-size: 18px;
     color: white;
     text-decoration: none;
