@@ -79,7 +79,7 @@ const BlogPost = () => {
       <div className="sidebar">
         {/* Categories */}
         <div className="widget">
-          <h3>Categories</h3>
+          <h3 className="w3-cont">Categories</h3>
           <ul>
             {categories.map((category, index) => (
               <li key={index}>{category}</li>
@@ -89,13 +89,13 @@ const BlogPost = () => {
 
         {/* Search Box */}
         <div className="widget-1">
-          <h3>Search</h3>
+          <h3 className="w3-cont-1">Search</h3>
           <input type="text" placeholder="Search..." />
         </div>
 
         {/* Tags */}
         <div className="widget-1">
-          <h3>Tags</h3>
+          <h3 className="w3-cont-1">Tags</h3>
           <div className="tags">
             {tags.map((tag, index) => (
               <span key={index} className="tag">{tag}</span>
@@ -105,7 +105,7 @@ const BlogPost = () => {
 
         {/* Recent Comments */}
         <div className="widget-2">
-          <h3>Recent Comments</h3>
+          <h3 className="w3-cont-2">Recent Comments</h3>
           <ul>
             {recentComments.map((comment, index) => (
               <li key={index}>
@@ -118,7 +118,7 @@ const BlogPost = () => {
       
     </div>
     <div className="widget-3">
-    <h3>Contact Now For Collaborations</h3>
+    <h3 className="w3-cont-3">Contact Now For Collaborations</h3>
 
         <a href="/contact"><button className="w-b-b">Contact</button></a>
 
