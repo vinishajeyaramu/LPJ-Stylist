@@ -68,10 +68,21 @@
     .grid-row-3 { grid-template-columns: 1fr 1fr; }
     .grid-row-4 { grid-template-columns: repeat(2, 1fr); }
     .grid-item { height: 400px; }
+    .grid-container-1{
+      margin-top: 20%;
+    }
   }
   
   @media (max-width: 768px) {
     .grid-row-3, .grid-row-4 { grid-template-columns: 1fr; }
     .grid-item { height: 300px; }
+    .grid-container-1{
+      margin-top: 20%;
+    }
+  }
+  @media (max-width:480px){
+    .grid-container-1{
+      margin-top: 25%;
+    }
   }
   

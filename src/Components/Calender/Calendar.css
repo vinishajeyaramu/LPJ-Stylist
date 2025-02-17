@@ -115,6 +115,8 @@
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
+    width: 30%;
+    margin: 0 auto;
   }
   
   .submit-button:hover {
@@ -124,4 +126,170 @@
   .confirmation {
     padding: 20px;
   }
+  /* Dropdown Container */
+.custom-dropdown {
+  appearance: none; /* Removes default browser styles */
+  background-color: #A888B5; /* Background color */
+  color: white; /* Text color */
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid #69247C; /* Border color */
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Dropdown on Hover & Focus */
+.custom-dropdown:hover,
+.custom-dropdown:focus {
+  background-color: #8174A0;
+  border-color: #50356B;
+}
+
+/* Custom Dropdown Wrapper */
+.custom-dropdown-container {
+  position: relative;
+  display: inline-block;
+  width: 48%; /* Responsive width */
+  margin: 5px;
+}
+
+/* Custom Arrow */
+.custom-dropdown-container::after {
+  content: ""; /* Custom dropdown arrow */
+  font-size: 14px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* Style dropdown options */
+.custom-dropdown option {
+  background: white;
+  color: #69247C;
+  font-size: 16px;
+  padding: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .container, .confirmation, .booking-form, .time-selection, .month-year-selection {
+    width: 100%;
+  }
+}
+
+  @media (max-width:1024px){
+    .container, .confirmation, .booking-form, .time-selection, .month-year-selection{
+      margin-top: 20%;
+    }
+
+  }
+  @media (max-width:786px){
+    .container, .confirmation, .booking-form, .time-selection, .month-year-selection{
+      margin-top: 20%;
+    }
+    
+  }
+  @media (max-width:480px){
+    .container, .confirmation, .booking-form, .time-selection, .month-year-selection{
+      margin-top: 35%;
+    }
+    
+  }
+  @media (max-width: 1024px) {
+    .container, .confirmation, .booking-form, .time-selection, .month-year-selection{
+      margin-top: 15%;
+    }
   
+    .date-button {
+      padding: 10%;
+      font-size: 14px;
+    }
+  
+    .time-button {
+      width: 40%;
+      font-size: 14px;
+    }
+  
+    .booking-form input,
+    .booking-form textarea {
+      width: 50%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container, .confirmation, .booking-form, .time-selection, .month-year-selection{
+      margin-top: 18%;
+    }
+  
+    .dates {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+    }
+  
+    .date-button {
+      padding: 8%;
+      font-size: 12px;
+    }
+  
+    .times {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .time-button {
+      width: 60%;
+      font-size: 14px;
+      padding: 4%;
+    }
+  
+    .booking-form input,
+    .booking-form textarea {
+      width: 60%;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container, .confirmation, .booking-form, .time-selection, .month-year-selection {
+      margin-top: 25%;
+      padding: 15px;
+    }
+  
+    .dates {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+    }
+  
+    .date-button {
+      padding: 6%;
+      font-size: 10px;
+    }
+  
+    .times {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .time-button {
+      width: 80%;
+      font-size: 12px;
+      padding: 5%;
+    }
+  
+    .booking-form input,
+    .booking-form textarea {
+      width: 80%;
+      font-size: 12px;
+    }
+  
+    .submit-button {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }

@@ -61,6 +61,7 @@
 @media screen and (max-width: 1024px) {
   .services-container {
       gap: 30px;
+      margin-top: 20%;
   }
 
   .service-card {
@@ -77,6 +78,7 @@
   .services-container {
       flex-direction: column;
       align-items: center;
+      margin-top: 20%;
   }
 
   .service-card {
@@ -96,5 +98,8 @@
 
   .service-card img {
       height: 35vh;
+  }
+  .services-container{
+    margin-top: 30%;
   }
 }

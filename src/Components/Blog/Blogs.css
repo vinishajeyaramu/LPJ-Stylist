@@ -156,6 +156,7 @@ input[type="text"] {
         flex-direction: column;
         align-items: center;
         gap: 30px;
+        margin-top: 15%;
     }
 
     .blog-content, .sidebar {
@@ -186,6 +187,7 @@ input[type="text"] {
     .blog-container {
         flex-direction: column;
         padding: 20px;
+        margin-top: 20%;
     }
 
     .blog-content, .sidebar {
@@ -237,6 +239,7 @@ input[type="text"] {
 @media (max-width: 480px) {
     .blog-container {
         padding: 10px;
+        margin-top: 40%;
     }
 
     .blog-post {

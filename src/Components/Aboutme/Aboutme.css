@@ -93,7 +93,7 @@
 /* General Styles */
 .about-section {
   width: 100%;
-  height: auto; /* Avoid fixed height issues */
+  height: auto; 
   padding: 0 110px;
   margin-top: 10%;
   background-color: #f9f9f9;
@@ -166,6 +166,7 @@
     flex-direction: column; /* Stack items in a column */
     align-items: center; /* Center-align content */
     text-align: center;
+    margin-top: 20%;
   }
 
   .about-image-container {
@@ -200,6 +201,7 @@
   .about-container {
     flex-direction: column;
     align-items: center;
+    margin-top: 20%;
   }
 
   .about-text {
@@ -219,12 +221,13 @@
     font-size: 20px;
   }
 }
-
 @media (max-width: 480px) {
   .about-section {
     padding: 0 15px;
   }
-
+  .about-container{
+    margin-top: 35%;
+  }
   .about-title {
     font-size: 28px;
   }

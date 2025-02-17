@@ -57,14 +57,14 @@ const Calendar = () => {
           <h2>Select a Date</h2>
 
           {/* Month & Year Selection */}
-          <div className="month-year-selection">
-            <select value={selectedMonth} onChange={(e) => setSelectedMonth(parseInt(e.target.value))}>
+          <div className="month-year-selection custom-dropdown-container ">
+            <select className="custom-dropdown" value={selectedMonth} onChange={(e) => setSelectedMonth(parseInt(e.target.value))}>
               {months.map((month, index) => (
                 <option key={index} value={index}>{month}</option>
               ))}
             </select>
 
-            <select value={selectedYear} onChange={(e) => setSelectedYear(parseInt(e.target.value))}>
+            <select className="custom-dropdown" value={selectedYear} onChange={(e) => setSelectedYear(parseInt(e.target.value))}>
               {[...Array(10)].map((_, index) => (
                 <option key={index} value={selectedYear - 5 + index}>
                   {selectedYear - 5 + index}
@@ -89,7 +89,7 @@ const Calendar = () => {
         <div className="time-selection">
           <h2>Select a Time on {months[selectedMonth]} {selectedDate}, {selectedYear}</h2>
           <div className="times">
-            {["9:00 AM", "10:00 AM", "11:00 AM", "1:00 PM", "2:00 PM", "3:00 PM", "4:00 PM"].map((time) => (
+            {["9:00 AM", "10:00 AM", "11:00 AM", "1:00 PM", "2:00 PM", "3:00 PM", "4:00 PM","5:00" ,"6:00"].map((time) => (
               <button key={time} onClick={() => handleTimeClick(time)} className="time-button">
                 {time}
               </button>

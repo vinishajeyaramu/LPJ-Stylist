@@ -138,14 +138,29 @@
       flex-direction: column;
       align-items: center;
     }
-  
+    .contact-container{
+      margin-top: 20%;
+    }
     .contact-form-container {
       flex-direction: column;
       height: auto;
     }
+    
   
     .map-container {
       height: 300px;
     }
+  }
+  @media (max-width:480px){
+    .contact-container{
+      margin-top: 35%;
+    }
+    
+  }
+  @media (max-width:1024px){
+    .contact-container{
+      margin-top: 20%;
+    }
+    
   }
   

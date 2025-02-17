@@ -131,7 +131,7 @@ nav {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background:  #ffffffb9;
+  background:  #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -217,11 +217,13 @@ nav {
     max-width: 600px;
     height: 100%;
     background: #fff;
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 0 10px #69247C;
     padding: 2rem;
     transition: left 0.3s ease-in-out;
     overflow-y: auto;
     z-index: 1001;
+    margin-top: 10%;
+    border-top-right-radius: 10px;
   }
 
   .menu.active {
