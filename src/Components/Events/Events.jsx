@@ -34,7 +34,7 @@ const Events = () => {
         },
         {
             title: "the vintage",
-            description: "My team and I craft captivating looks for campaigns, enhancing every face with stunning hairdressing techniques—from elegant updos to intricate fishtails.",
+            description: "Whether you're getting ready for a big event or just want a fresh new look, my styling services will elevate your appearance and amplify your confidence.",
             image: image4,
             link: "#"
         }

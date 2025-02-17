@@ -66,7 +66,11 @@ h2 {
     border-radius: 5px;
     text-align: center;
 }
-
+.widget-3{
+    width: 85%;
+    height: 40vh;
+    margin: 0 auto ;
+}
 .widget h3, .widget-1 h3, .widget-2 h3, .widget-3 h3 {
     font-size: 18px;
     color: white;
@@ -75,8 +79,11 @@ h2 {
 }
 
 .widget-3 h3 {
-    font-size: 50px; /* Reduced from 80px for better responsiveness */
-    margin-bottom: 20px;
+    font-size: 50px; 
+    width: 70%;
+    padding: 1%;
+    margin: 0 auto;
+    margin-top: 3.8%;
 }
 
 .widget ul, .widget-2 ul {
@@ -99,7 +106,7 @@ h2 {
 }
 
 /* Search Input */
-input[type="text"] {
+.widget-1 input[type="text"] {
     width: 100%;
     padding: 10px;
     border: none;
@@ -127,7 +134,7 @@ input[type="text"] {
 }
 
 /* Button */
-.w-b-b button {
+.w-b-b {
     width: 90%;
     max-width: 300px;
     padding: 10px;

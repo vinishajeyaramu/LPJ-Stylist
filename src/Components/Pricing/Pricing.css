@@ -53,6 +53,8 @@
   color: #333;
   background: #f8f8f8;
   position: relative;
+  width: 30%;
+  margin: 0 auto;
 }
 
 /* Price Style */
@@ -70,6 +72,7 @@
   border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
+ 
 }
 
 .book-now:hover {
@@ -80,7 +83,7 @@
 /* Most Popular Tag */
 .most-popular {
   position: absolute;
-  top: -10px;
+  top: -6.8px;
   right: 10px;
   background: #EFB6C8;
   color: white;

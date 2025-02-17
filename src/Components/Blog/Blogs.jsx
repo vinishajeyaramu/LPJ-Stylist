@@ -12,7 +12,7 @@ const blogPosts = [
       date: "January 24, 2016",
       comments: "0 Comments",
       image: image1,
-      content: "Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium...",
+      content: "Campaigns blend fashion, beauty, and culture to create impactful stories. My styling campaigns focus on aesthetics and purpose, ensuring a compelling visual narrative for brands and individuals.",
       link: "#"
     },
     {
@@ -22,7 +22,7 @@ const blogPosts = [
       date: "February 5, 2024",
       comments: "3 Comments",
       image: image2,
-      content: "Explore how fashion is evolving with new trends and styles...",
+      content: "Groom culture is about refining men’s style with confidence. From weddings to corporate looks, I help men embrace their unique fashion, blending tradition with modern trends.",
       link: "#"
     },
     {
@@ -32,7 +32,7 @@ const blogPosts = [
         date: "January 24, 2018",
         comments: "10 Comments",
         image: image3,
-        content: "Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium...",
+        content: "This prestigious pageant celebrates beauty, confidence, and culture. I curate stunning looks for contestants, ensuring they shine with elegance while embracing Bengal’s rich heritage.",
         link: "#"
       },
       {
@@ -42,7 +42,7 @@ const blogPosts = [
         date: "September 15, 2024",
         comments: "4 Comments",
         image: image4,
-        content: "Explore how fashion is evolving with new trends and styles...",
+        content: "Personal styling is about curating looks that reflect your personality and lifestyle. Whether it's a wardrobe revamp, event styling, or everyday fashion advice, I help you dress with confidence and elegance, ensuring you always look and feel your best.",
         link: "#"
       }
   ];

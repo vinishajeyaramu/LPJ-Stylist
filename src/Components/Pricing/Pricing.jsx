@@ -3,25 +3,11 @@ import "./Pricing.css"; // Import CSS for styling
 
 const packagesData = [
   {
-    title: "Makeover Package",
-    features: ["Bridal Makeup", "HD Makeup", "Airbrush", "Glamour"],
-    price: 199,
+    title: "Our Pricing Plan Holds This Package For Each",
+    features: ["Styling + Direction", "Event Directions", "Ads", "Makover", "Concept based Styling + Directions"],
+    price: 35000,
   },
-  {
-    title: "Styling Package",
-    features: ["Casual Styling", "Formal Styling", "Grooming", "Personalized Fit"],
-    price: 250,
-  },
-  {
-    title: "Conceptual Package",
-    features: ["Theme-Based Looks", "Editorial Styling", "Creative Direction"],
-    price: 299,
-  },
-  {
-    title: "Campaign Package",
-    features: ["Commercial Shoots", "Brand Styling", "Model Coordination"],
-    price: 399,
-  },
+  
 ];
 
 const PricingGrid = () => {
@@ -46,9 +32,9 @@ const PricingGrid = () => {
             {hoverIndex === index ? (
               <button className="book-now">Book Now</button>
             ) : (
-              <p className="price">${pkg.price}</p>
+              <p className="price">₹{pkg.price}</p>
             )}
-            {index === 2 && hoverIndex === index && <span className="most-popular">Most Popular</span>}
+            {index === 0 && hoverIndex === index && <span className="most-popular">Most Popular</span>}
           </div>
         </div>
       ))}

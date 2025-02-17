@@ -17,9 +17,8 @@ const Footer = () => {
       <div className='footer-main'>
           <div className='grid-1'>
             <h4>CONTACT US</h4>
-            <p>Shepherd's Bush Sinclair Road,
-            142, flat D, W14 0NL</p>
-            <p>+91 9988776655</p>
+            <p>Saket,Delhi,India</p>
+            <p>+91 9836989823</p>
             <p className='f-mail'><a href="mailto:labelpallavij@gmail.com">labelpallavij@gmail.com</a></p>
           </div>
           <div className='grid-2'>
