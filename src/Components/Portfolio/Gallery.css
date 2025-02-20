@@ -83,6 +83,7 @@
   @media (max-width:480px){
     .grid-container-1{
       margin-top: 25%;
+      padding: 10px;
     }
   }
   

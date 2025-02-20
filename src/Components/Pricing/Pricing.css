@@ -1,12 +1,11 @@
-/* Grid container */
+/* Responsive Grid */
 .pricing-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-  max-width: 1000px;
-  margin: auto;
-  margin-top: 8%;
-  margin-bottom: 8%;
+  max-width: 1200px;
+  margin: 8% auto;
+  padding: 0 10px;
 }
 
 /* Card Style */
@@ -14,7 +13,7 @@
   background: #fff;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px #EFB6C8;
+  box-shadow: 0 4px 8px rgba(239, 182, 200, 0.5);
   text-align: center;
   transition: transform 0.3s ease;
 }
@@ -39,7 +38,7 @@
 
 .pricing-card ul li {
   font-size: 0.9rem;
-  color: #8174A0 ;
+  color: #8174A0;
   margin: 5px 0;
 }
 
@@ -53,14 +52,14 @@
   color: #333;
   background: #f8f8f8;
   position: relative;
-  width: 30%;
+  width: 60%;
   margin: 0 auto;
 }
 
 /* Price Style */
 .price {
   font-size: 1.8rem;
-  color:  #A888B5;
+  color: #A888B5;
 }
 
 /* Book Now Button */
@@ -72,12 +71,13 @@
   border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
- 
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .book-now:hover {
   background: white;
   color: #EFB6C8;
+  border: 2px solid #EFB6C8;
 }
 
 /* Most Popular Tag */
@@ -91,4 +91,81 @@
   font-size: 0.8rem;
   border-radius: 5px;
   font-weight: bold;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets and Medium Devices */
+@media (max-width: 1024px) {
+  .pricing-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .pricing-card h2 {
+    font-size: 1.3rem;
+  }
+
+  .pricing-card ul li {
+    font-size: 0.85rem;
+  }
+
+  .pricing-box {
+    width: 50%;
+  }
+
+  .book-now {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .pricing-container {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-card {
+    margin-bottom: 20px;
+  }
+
+  .pricing-card h2 {
+    font-size: 1.2rem;
+  }
+
+  .pricing-box {
+    width: 70%;
+  }
+
+  .book-now {
+    width: 80%;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+  .pricing-card {
+    padding: 15px;
+  }
+
+  .pricing-card h2 {
+    font-size: 1.1rem;
+  }
+
+  .pricing-card ul li {
+    font-size: 0.8rem;
+  }
+
+  .pricing-box {
+    width: 80%;
+  }
+
+  .price {
+    font-size: 1.5rem;
+  }
+
+  .book-now {
+    width: 100%;
+    padding: 8px;
+  }
 }
