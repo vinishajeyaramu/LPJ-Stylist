@@ -256,11 +256,14 @@
       width: 60%;
       font-size: 14px;
     }
+    .submit-button{
+      width: 30%;
+    }
   }
   
   @media (max-width: 480px) {
     .container, .confirmation, .booking-form, .time-selection, .month-year-selection {
-      margin-top: 25%;
+      margin-top: 27%;
       padding: 15px;
     }
   
@@ -293,6 +296,8 @@
   
     .submit-button {
       font-size: 14px;
-      padding: 8px;
+      padding: 4px;
+      width: 45%;
     }
   }
+  

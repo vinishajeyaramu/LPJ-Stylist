@@ -166,6 +166,9 @@ button:hover {
   .form-container h2 {
       font-size: 22px;
   }
+  .map-container {
+    /* max-height: 350px; */
+  }
 }
 
 @media (max-width: 768px) {
@@ -181,11 +184,12 @@ button:hover {
   .contact-form-container {
       flex-direction: column;
       height: auto;
-      gap: 30px;
+      gap: 3px;
+      
   }
 
   .map-container {
-      min-height: 300px;
+      min-height: 370px;
   }
 
   .form-container {
@@ -203,7 +207,7 @@ button:hover {
 
 @media (max-width: 480px) {
   .contact-container {
-      margin-top: 20%;
+      margin-top: 0%;
   }
 
   .contact-subtitle {
@@ -232,7 +236,7 @@ button:hover {
   }
 
   .map-container {
-      height: 250px;
+      height: 450px;
   }
 
   .form-container {
@@ -259,5 +263,9 @@ button:hover {
   button {
       font-size: 14px;
       padding: 10px;
+  }
+  .contact-form-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
   }
 }
